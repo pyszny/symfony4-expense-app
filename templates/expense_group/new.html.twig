@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New ExpenseGroup{% endblock %}
+
+{% block body %}
+    <h1>Create new ExpenseGroup</h1>
+
+    {{ include('expense_group/_form.html.twig') }}
+
+    <a href="{{ path('expense_group_index') }}">back to list</a>
+{% endblock %}

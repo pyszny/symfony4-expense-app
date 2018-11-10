@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ExpenseGroup{% endblock %}
+
+{% block body %}
+    <h1>ExpenseGroup</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ expense_group.id }}</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>{{ expense_group.name }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('expense_group_index') }}">back to list</a>
+
+    <a href="{{ path('expense_group_edit', {'id': expense_group.id}) }}">edit</a>
+
+    {{ include('expense_group/_delete_form.html.twig') }}
+{% endblock %}
