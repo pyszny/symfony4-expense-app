@@ -18,6 +18,10 @@
                 <source>Types</source>
                 <target>Typy</target>
             </trans-unit>
+            <trans-unit id="ExpenseEntries">
+                <source>Enter an Expense</source>
+                <target>Moje wydatki</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

@@ -23,7 +23,7 @@ class Expense
 
 
     /**
-     * @ORM\ManyToOne(targetEntity="ExpenseGroup", inversedBy="expenses")
+     * @ORM\ManyToOne(targetEntity="App\Entity\ExpenseGroup", inversedBy="expenses")
      */
     private $expense_group;
 
